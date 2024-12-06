@@ -1,96 +1,81 @@
-{% extends "base.njk" %}
+{% extends "base.njk" %} {% block content %}
+<section class="site-hero">
+  <div class="container">
+    <div class="site-about-hero">
+      <h3 class="light-font">{{title | safe}}</h3>
+    </div>
+  </div>
+</section>
 
-{% block content %}
-    <section class="site-about-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="site-about-wrapper">
-              <div class="site-about-company">
-                {{content | safe}}
-              </div>
-              <div class="site-about-description">
-                <p>
-                  {{des}}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+<section class="site-about-section">
+  <div class="container">
+    <div class="grid-container about-us">
+      <div class="grid-item">
+        <h6>{{ whoWeAreHeading | safe}}</h6>
+        <p>{{whoWeAre | safe}}</p>
       </div>
-    </section>
+      <div class="grid-item">
+        <img src="/assets/images/about/about-us.jpg" width="450px" />
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="site-expertise">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <div class="section-title">
-              <h2>{{expertise.title}}</h2>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <ul class="site-expertise-list">
-              {% for expertIn in expertise.expertIn %}
-              <li>{{expertIn}}</li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
+<section class="site-about-section">
+  <div class="container">
+    <div class="grid-container">
+      <div class="grid-item">
+        <h6>Empowering Innovation Through Automation</h6>
+        <p>
+          At Entrenets, our vision is rooted in a belief that technology should
+          be a force multiplier, not a burden. We aspire to create a world where
+          mundane, repetitive tasks are seamlessly handled by intelligent
+          automation, freeing individuals and organizations to focus on what
+          truly matters: creativity, strategy, and innovation.
+        </p>
       </div>
-    </section>
+      <div class="grid-item">
+        <img
+          src="/assets/images/about/team.png"
+          width="450px"
+          class="rounded"
+        />
+      </div>
+      <div class="grid-item">
+        <img
+          src="/assets/images/about/colleague.png"
+          width="350px"
+          class="rounded"
+        />
+      </div>
+      <div class="grid-item">
+        <h6>Unleashing Human Potential</h6>
+        <p>
+          By enabling smarter networks and more agile cloud operations, we help
+          businesses transition from being reactive to proactive. This future
+          isn’t just about efficiency—it’s about unleashing human potential,
+          empowering teams to tackle the challenges that require ingenuity,
+          leadership, and critical thinking.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="site-client">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title">
-              <h2>{{clients.title}}</h2>
-            </div>
-            <div class="site-client-wrapper">
-              {% for trustedClient in clients.trustedClients %}
-              <div class="site-client-item">
-                <img src="{{trustedClient}}" alt="client-logo">
-              </div> 
-              {% endfor %}
-            </div>
-          </div>
-        </div>
+<section class="site-about-section">
+  <div class="container">
+    <div class="section-title center">
+      <h3 class="light-font uppercase center">{{valuesTitle | safe}}</h3>
+    </div>
+    <div class="grid-container-values">
+      {% for value in values.values %}
+      <div class="grid-item value">
+        <img src="{{value.icon}}" class="value-icon" />
+        <h6>{{value.title}}</h6>
+        <p>{{value.description}}</p>
       </div>
-    </section>
-
-    <section class="site-team">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title">
-              <h2>
-                {{team.title}}
-              </h2>
-            </div>
-          </div>
-          {% for teamMember in team.teamMembers %}
-          <div class="col-lg-4 col-md-6">
-            <div class="site-team-member">
-              <div class="site-team-member-image">
-                <img src="{{teamMember.img}}" alt="team-member">
-              </div>
-              <div class="site-team-member-content">
-                <h3>{{teamMember.name}}</h3>
-                <p>{{teamMember.dig}}</p>
-                <ul class="site-team-member-social">
-                  {% for social in teamMember.social %}
-                  <li>
-                    <a href="/{{social.link}}">
-                      <i class="fa fa-{{social.icon}}"></i>
-                    </a>
-                  </li> 
-                  {% endfor %}
-                </ul>
-              </div>
-            </div>
-          </div> 
-          {% endfor %}
-        </div>
-      </div>
-    </section>
+      {% endfor %}
+    </div>
+  </div>
+</section>
 {% endblock %}

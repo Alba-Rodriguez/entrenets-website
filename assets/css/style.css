@@ -10,9 +10,10 @@ VERSION:	1.0.0
   --primary-color: #000;
   --secondary-color: #4161d3;
   --accent-color: #54C392;
-  --text-light-color: #fcfbf9;
+  --text-light-color: #d9d9d9;
   --text-dark-color: #454545;
   --text-blue-color: #4F75FF;
+  --light-bg-color: #F5F5F5;
 
   --hover-light-text: rgba(255, 255, 255, 0.8);
   --hover-primary-btn-bg: #429f77;
@@ -22,7 +23,8 @@ VERSION:	1.0.0
 body {
   font-family: "avenir";
   font-size: 16px;
-  background-color: linear-gradient(to bottom, #F5F5F5, #FDFDFD);
+  background-color: #000;
+  /* background-color: linear-gradient(to bottom, #F5F5F5, #FDFDFD); */
 }
 
 h1,
@@ -37,7 +39,7 @@ h6 {
 }
 
 p {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   margin-bottom: 0;
   color: var(--text-light-color);
@@ -65,17 +67,17 @@ h3 {
 }
 
 h4 {
-  font-size: 20px;
-  color: #c8c9ce;
+  font-size: 30px;
+  color: var(--text-light-color);
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 22px;
   color: var(--text-blue-color);
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 20px;
   color: var(--text-light-color);
 }
 
@@ -84,8 +86,27 @@ h6 {
   text-align: center;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.grid-item {
+  color: white;
+  padding: 20px;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.mt-lg {
+  margin-top: 50px;
 }
 
 .mb-lg {
@@ -153,6 +174,10 @@ h6 {
   .section-title {
     text-align: center;
   }
+}
+
+.section-title {
+  margin-bottom: 50px;
 }
 
 .section-title h2,
@@ -425,6 +450,11 @@ h3 {
   font-weight: 700;
 }
 
+.challenges,
+.mission {
+  background-color: var(--light-bg-color);
+}
+
 .challenge-col {
   padding: 8px;
 }
@@ -441,6 +471,14 @@ h3 {
 .challenge-card img {
   width: 100px;
   padding: 16px 16px 16px 32px;
+}
+
+.challenge-card p {
+  font-size: 15px;
+}
+
+.challenge-card h6 {
+  font-size: 16px;
 }
 
 .challenge-content {
@@ -1049,9 +1087,8 @@ p {
   }
 }
 
-.site-about-header {
-  padding-top: 80px;
-  background-color: #F7F9FF;
+.page-title {
+  margin: 200px 0 100px;
 }
 
 @media (max-width: 575px) {
@@ -1061,10 +1098,57 @@ p {
   }
 }
 
-.site-about-wrapper {
+.site-about-section {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  justify-self: center;
+}
+
+.site-about-hero {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  text-align: left;
+}
+
+.light-font {
+  font-weight: 400;
+}
+
+.grid-container-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+.about-us {
+  background-color: #6864643f;
+  border-radius: 40px;
+  padding: 8px 16px 0;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.about-us p {
+  color: var(--text-light-color);
+}
+
+.rounded {
+  border-radius: 20px;
+}
+
+.value {
+  min-height: 400px;
+}
+
+.value-icon {
+  width: 100px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-self: center;
 }
 
 .site-about-company {
@@ -1090,8 +1174,11 @@ p {
 }
 
 .site-about-description {
-  width: 60%;
-  padding-left: 50px;
+  width: 80%;
+}
+
+.site-about-description img {
+  width: 500px;
 }
 
 @media (max-width: 991px) {
@@ -1107,51 +1194,8 @@ p {
   margin-bottom: 0;
 }
 
-.site-expertise {
-  padding: 100px 0;
-  background: #F7F9FF;
-}
-
-.site-expertise-list {
-  padding: 0;
-  margin: 10px 0 0 20px;
-}
-
-@media (max-width: 575px) {
-  .site-expertise-list {
-    text-align: center;
-    margin: 0;
-  }
-}
-
-.site-expertise-list li {
-  list-style: none;
-  font-size: 25px;
-  font-weight: 300;
-  color: #00113E;
-}
-
-.site-expertise-list li:not(:last-child) {
-  margin-bottom: 10px;
-}
-
 .site-client {
   padding: 100px 0 50px;
-}
-
-.site-client .section-title {
-  margin-bottom: 100px;
-}
-
-.site-client-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-@media (max-width: 991px) {
-  .site-client-wrapper {
-    justify-content: center;
-  }
 }
 
 .site-client-item {
