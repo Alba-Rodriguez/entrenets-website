@@ -11,8 +11,8 @@
   <div class="container">
     <div class="grid-container about-us">
       <div class="grid-item">
-        <h6>{{ whoWeAreHeading | safe}}</h6>
-        <p>{{whoWeAre | safe}}</p>
+        <h6>{{aboutUsTitle | safe}}</h6>
+        <p>{{aboutUs | safe}}</p>
       </div>
       <div class="grid-item">
         <img src="/assets/images/about/about-us.jpg" width="450px" />
@@ -25,38 +25,22 @@
   <div class="container">
     <div class="grid-container">
       <div class="grid-item">
-        <h6>Empowering Innovation Through Automation</h6>
-        <p>
-          At Entrenets, our vision is rooted in a belief that technology should
-          be a force multiplier, not a burden. We aspire to create a world where
-          mundane, repetitive tasks are seamlessly handled by intelligent
-          automation, freeing individuals and organizations to focus on what
-          truly matters: creativity, strategy, and innovation.
-        </p>
+        <h6>{{vision.innovate.title}}</h6>
+        <p>{{vision.innovate.text}}</p>
+      </div>
+      <div class="grid-item">
+        <img src="{{vision.innovate.image}}" width="450px" class="rounded" />
       </div>
       <div class="grid-item">
         <img
-          src="/assets/images/about/team.png"
-          width="450px"
-          class="rounded"
-        />
-      </div>
-      <div class="grid-item">
-        <img
-          src="/assets/images/about/colleague.png"
+          src="{{vision.humanPotential.image}}"
           width="350px"
           class="rounded"
         />
       </div>
       <div class="grid-item">
-        <h6>Unleashing Human Potential</h6>
-        <p>
-          By enabling smarter networks and more agile cloud operations, we help
-          businesses transition from being reactive to proactive. This future
-          isn’t just about efficiency—it’s about unleashing human potential,
-          empowering teams to tackle the challenges that require ingenuity,
-          leadership, and critical thinking.
-        </p>
+        <h6>{{vision.humanPotential.title}}</h6>
+        <p>{{vision.humanPotential.text}}</p>
       </div>
     </div>
   </div>
