@@ -11,8 +11,8 @@
   <div class="container">
     <div class="grid-container about-us">
       <div class="grid-item">
-        <h6>{{aboutUsTitle | safe}}</h6>
-        <p>{{aboutUs | safe}}</p>
+        <h6>{{aboutUs.title | safe}}</h6>
+        <p>{{aboutUs.text | safe}}</p>
       </div>
       <div class="grid-item">
         <img src="/assets/images/about/about-us.jpg" width="450px" />
@@ -49,7 +49,7 @@
 <section class="site-about-section">
   <div class="container">
     <div class="section-title center">
-      <h3 class="light-font uppercase center">{{valuesTitle | safe}}</h3>
+      <h3 class="light-font uppercase center">{{valuesTitle | safe }}</h3>
     </div>
     <div class="grid-container-values">
       {% for value in values.values %}
