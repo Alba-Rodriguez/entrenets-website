@@ -7,7 +7,7 @@ hero:
   subTitle: "Driving efficiency, scalability, and innovation for your network operations."
   cloudMigrationBtn:
     text: "Cloud Migration"
-    link: "#project"
+    link: "cloud-migration"
   automationBtn:
     text: "Network Automation"
     link: "#project"

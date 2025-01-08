@@ -2,18 +2,22 @@
   "solutions": [
     {
       "title": "Network Automation",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      "icon": "assets/images/solutions/automation.svg"
-    },
-    {
-      "title": "IT infrastructure and DevOps",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      "icon": "assets/images/solutions/devops.svg"
+      "subtitle": "Simplify your network",
+      "description": "By eliminating repetitive tasks, our solutions reduce errors, boost efficiency, and ensure seamless scalability, allowing your teams to focus on innovation.",
+      "image": "assets/images/solutions/mockup-laptop-mainframes-fixing.jpg",
+      "altText": "Image of a woman working on her laptop"      
     },
     {
       "title": "Cloud Migration",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-      "icon": "assets/images/solutions/cloud.svg"
+      "subtitle": "Migrate with confidence",
+      "description": "We ensure a smooth, secure migration of your data and applications, unlocking agility, cost savings, and the flexibility your business needs to thrive in a dynamic market.",
+      "image": "assets/images/solutions/AdobeStock_333831719.jpeg"
+    },
+    {
+      "title": "Cloud Management",
+      "subtitle": "Optimise for performance",
+      "description": "Our tailored solutions enhance performance, improve security, and reduce operational costs, empowering you to achieve long-term success.",
+      "image": "assets/images/solutions/image copy.png"
     }
   ]
 }

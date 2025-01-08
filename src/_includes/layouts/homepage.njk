@@ -92,7 +92,7 @@
       <div class="col-12">
         <div class="section-title">
           <h3>{{mission.title | safe}}</h3>
-          <h3>{{mission.main}}</h3>
+          <h3>{{mission.main | safe}}</h3>
           <!-- Google Calendar Appointment Scheduling begin -->
           <script
             src="https://calendar.google.com/calendar/scheduling-button-script.js"
@@ -119,36 +119,41 @@
 </section>
 <section class="section solutions" id="project">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="section-title">
-          <h2>{{ourSolutions.title}}</h2>
-          <h6>{{ourSolutions.subTitle | safe}}</h6>
-        </div>
-        <div class="col-12 solution-col">
-          {% for solution in solutions.solutions %}
-          <div class="col-6">
-            <div class="solution-item">
-              <div class="solutions-content">
-                <img src="{{solution.icon}}" />
-                <h5>{{solution.title}}</h5>
-                <p>{{solution.description }}</p>
-              </div>
-            </div>
+    <div class="section-title center">
+      <h2>Solutions</h2>
+      {#
+      <h6>{{ourSolutions.subTitle | safe}}</h6>
+      #}
+    </div>
+    <div class="grid-container-values">
+      {% for solution in solutions.solutions %}
+      <div class="grid-item">
+        <div class="solution-item">
+          <div class="solutions-content">
+            <img
+              src="{{solution.image}}"
+              class="solutions-content-image"
+              altText="{{solution.altText}}"
+            />
+            <p class="solutions-content-title"><b>{{solution.title}}</b></p>
+            <h6 class="solutions-content-subtitle">{{solution.subtitle}}</h6>
+            <p class="solutions-content-description">
+              {{solution.description }}
+            </p>
+            <a href="/{{hero.managedCloud.link}}">
+              <span class="btn-area">
+                <span data-text="Explore {{solution.title}}"
+                  ><b>Explore {{solution.title}}</b
+                  ><img
+                    src="/assets/images/right-arrow.svg"
+                    class="learn-more-icon"
+                /></span>
+              </span>
+            </a>
           </div>
-          {% endfor %} {% for solution in solutions.solutions %}
-          <div class="col-6">
-            <div class="solution-card">
-              <div class="solutions-content">
-                <img src="{{solution.icon}}" />
-                <h5>{{solution.title}}</h5>
-                <p>{{solution.description}}</p>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
         </div>
       </div>
+      {% endfor %}
     </div>
   </div>
 </section>
