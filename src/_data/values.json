@@ -1,0 +1,34 @@
+{
+    "values": [
+        {
+            "title": "Focus on Customer Success",
+            "description": "We don't just deliver—we produce tangible, impactful results. By crafting innovative, efficient solutions, we drive success for our customers and empower our teams to achieve greatness, together.",
+            "icon": "/assets/images/values/optimism.svg"
+        },
+        {
+            "title": "Always Evolve",
+            "description": "Growth is non-negotiable. We stay at the cutting edge of our industry by embracing constant learning. We challenge ourselves to stay humble, and innovate relentlessly.",
+            "icon": "/assets/images/values/knowledge.svg"
+        },
+        {
+            "title": "Act With Integrity",
+            "description": "We are unwavering in our commitment to honesty and transparency. Integrity guides our decisions, actions, and interactions, ensuring that trust is the foundation of every relationship we build.",
+            "icon": "/assets/images/values/integrity.svg"
+        },
+        {
+            "title": "Win Through Collaboration",
+            "description": "We believe that the best ideas emerge when diverse minds come together. Collaboration fuels our innovation, ensures inclusivity, and helps us deliver outstanding solutions through the power of shared expertise.",
+            "icon": "/assets/images/values/community.svg"
+        },
+        {
+            "title": "Connect Through empathy",
+            "description": "True collaboration thrives on genuine human connection. We seek to understand the unique challenges, aspirations, and motivations of both our colleagues and customers, building stronger relationships and driving superior performance.",
+            "icon": "/assets/images/values/comunication.svg"
+        },
+        {
+            "title": "Commitment to Mastery",
+            "description": "Our drive for mastery fuels us to constantly improve our methods, embrace cutting-edge innovations, and hold ourselves to the highest standards. We take immense pride in the work we do and the transformative results it brings to our customers, ensuring quality is embedded in everything we create.",
+            "icon": "/assets/images/values/quality.svg"
+        }
+    ]
+}
