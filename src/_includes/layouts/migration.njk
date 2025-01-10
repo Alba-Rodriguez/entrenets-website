@@ -1,0 +1,91 @@
+{% extends "base.njk" %} {% block content %}
+<section class="site-hero">
+  <div class="container cloud-migration-hero">
+    <div class="site-hero-content center">
+      {#
+      <div class="grid-container">
+        #}
+        <img src="/assets/images/cloud-migration/cloud-icon.svg" width="60px" />
+        <h6>{{hero.name}}</h6>
+        {#
+      </div>
+      #}
+      <h1>{{hero.title | safe}}</h1>
+      <h6 class="center light-font">{{hero.subTitle | safe}}</h6>
+      <script
+        src="https://calendar.google.com/calendar/scheduling-button-script.js"
+        async
+      ></script>
+      <script defer>
+        ;(function () {
+          var target = document.currentScript
+          window.addEventListener("load", function () {
+            calendar.schedulingButton.load({
+              url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ0vjsn2s4bFmi008CdMUzP-OVemccm239MljgA84LubSCTzS5SNDQMzZNt45JM3Gwzv5yyXOYCU?gv=true",
+              color: "#EB3678",
+              label: "Book a call",
+              target,
+            })
+          })
+        })()
+      </script>
+    </div>
+  </div>
+</section>
+
+<section class="site-about-section">
+  <div class="container">
+    <div class="grid-item">
+      <h3>{{subTitle | safe}}</h3>
+      <h3>{{intro}}</h3>
+    </div>
+    <div class="cloud-migration-challenges-container">
+      {% for challenge in challenges %}
+      <div class="cloud-migration-challenges-item">
+        <img src="{{challenge.image}}" width="70px" />
+        <h6>{{challenge.name}}</h6>
+        <p>{{challenge.description}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="site-about-section light-bg">
+  <div class="container">
+    <div class="section-title center">
+      <h3 class="process-title">{{approach.title}}</h3>
+    </div>
+    <p class="process-title">{{approach.intro}}</p>
+    <div class="process-container">
+      {% for step in approach.steps%}
+      <div class="process-step">
+        <div class="process-content">
+          <img src="{{step.icon}}" class="cloud-migration-process-item-image" />
+          <h3 class="process-number">{{step.name}}</h3>
+          <p class="process-description">{{step.description}}</p>
+        </div>
+      </div>
+      {%endfor%}
+    </div>
+  </div>
+</section>
+<section class="site-about-section">
+  <div class="container">
+    <div class="section-title center">
+      <h3>Benefits of Migrating into AWS</h3>
+    </div>
+    <div class="grid-container-values cloud-migration-benefits-container">
+      {% for benefit in AWS.benefits %}
+      <div class="grid-item cloud-migration-benefits-item">
+        <img
+          src="{{benefit.image}}"
+          class="cloud-migration-benefits-item-image"
+        />
+        <h6>{{benefit.name}}</h6>
+        <p>{{benefit.description}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
