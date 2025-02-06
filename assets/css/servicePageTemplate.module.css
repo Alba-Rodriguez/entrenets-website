@@ -20,24 +20,24 @@
 }
 
 .cloud-migration-challenges-item:first-child {
-  background-color: rgba(127, 255, 212, 0.435);
+  background-color: rgba(127, 255, 212, 0.198);
 }
 
 .cloud-migration-challenges-item:nth-child(2) {
-  background-color: rgba(127, 204, 255, 0.435);
+  background-color: rgba(127, 204, 255, 0.223);
 }
 
 .cloud-migration-challenges-item:nth-child(3) {
-  background-color: rgba(127, 136, 255, 0.435);
+  background-color: rgba(127, 136, 255, 0.275);
 }
 
 .cloud-migration-challenges-item:nth-child(4) {
-  background-color: rgba(172, 127, 255, 0.435);
+  background-color: rgba(172, 127, 255, 0.271);
 }
 
 .cloud-migration-challenges-item {
   padding: 20px;
-  border-radius: 4px;
+  border-radius: 48px;
   margin: 6px;
   text-align: center;
 }
@@ -76,9 +76,9 @@
 
 .cloud-migration-benefits-item {
   padding: 20px 15px;
-  border-radius: 4px;
+  border-radius: 48px;
   text-align: center;
-  background-color: rgba(127, 255, 212, 0.435);
+  background-color: rgba(127, 204, 255, 0.169);
 }
 
 .cloud-migration-benefits-item-image {
