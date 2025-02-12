@@ -42,6 +42,14 @@
       type="image/x-icon"
     />
     <link rel="icon" href="/assets/images/favIcon.png" type="image/x-icon" />
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          ;(window.vaq = window.vaq || []).push(arguments)
+        }
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
   </head>
 
   <body>
@@ -84,7 +92,10 @@
             </li>
             {% endfor %}
             <li class="nav-item">
-              <a class="nav-link btn btn-sm btn-primary btn-sm-rounded get-in-touch" href="/{{nav.navBtnLink}}">
+              <a
+                class="nav-link btn btn-sm btn-primary btn-sm-rounded get-in-touch"
+                href="/{{nav.navBtnLink}}"
+              >
                 <span class="btn-area">
                   <span data-text="{{nav.navBtnText}}">
                     {{nav.navBtnText}}
