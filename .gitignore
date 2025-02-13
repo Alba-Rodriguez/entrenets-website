@@ -2,3 +2,5 @@ node_modules
 _site
 dist
 .module.css.json
+.env
+.vercel
