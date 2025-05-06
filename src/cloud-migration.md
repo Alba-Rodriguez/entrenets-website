@@ -26,7 +26,7 @@ challenges:
     icon: /assets/images/servicePageTemplate/challenges/security.svg
 
 AWS:
-  title: Proven results
+  title: Why work with us
   intro: Our approach to cloud adoption delivers real, measurable outcomes. From reducing operational costs to improving performance and resilience, we help organizations unlock the full potential of the cloud—securely and at scale. These are just some of the tangible benefits our clients experience.
   benefits:
     - name: Lower Operational Costs
