@@ -44,7 +44,7 @@ AWS:
 
     - name: Cost-Efficient Cloud Operations
       description: We help you avoid the most common cloud pitfalls—over-provisioned services, unused resources, or surprise charges—by auditing your infrastructure and applying smart governance policies. This means lower monthly costs and a cloud environment that scales with your business, not your bills.
-      image: /assets/images/servicePageTemplate/results/businessman-doing-financial-analysis-overview.svg
+      image: /assets/images/servicePageTemplate/challenges/financial-stock-market-fluctuations.svg
 
     - name: Continuous Monitoring & Fast Resolution
       description: We keep a close eye on performance, availability, and security metrics 24/7. With intelligent alerts and proactive incident response, most issues are resolved before they impact users. This ensures a stable, high-performing environment without you having to lift a finger.
@@ -52,19 +52,19 @@ AWS:
 
     - name: Lower Operational Risk
       description: Running mission-critical systems in the cloud comes with inherent risks—but you don’t have to face them alone. Our team minimizes misconfigurations, security holes, and single points of failure through automation, documentation, and redundancy planning. It’s not just about avoiding problems—it’s about building resilience into everything.
-      image: /assets/images/servicePageTemplate/reduced-risks.svg
+      image: /assets/images/servicePageTemplate/results/reduce-business-risk.svg
 
 approach:
   title: Our approach to Cloud Management
   steps:
-  - name: Security First
+  - name: 1. Security First
     description: With robust monitoring, regular updates, and best-in-class practices, we ensure your cloud environment stays protected against threats.
     icon: /assets/images/servicePageTemplate/process/security-check.svg
 
-  - name: Uninterrupted Reliability
+  - name: 2. Uninterrupted Reliability
     description: We guarantee minimal downtime, proactive maintenance, and quick issue resolution to keep your systems running smoothly.
     icon: /assets/images/servicePageTemplate/process/continuous.svg
 
-  - name: Cost Optimisation
+  - name: 3. Cost Optimisation
     description: From analysing resource usage to recommending smarter configurations, we help reduce unnecessary expenses while maximising performance.
     icon: /assets/images/servicePageTemplate/process/wealth-management.svg

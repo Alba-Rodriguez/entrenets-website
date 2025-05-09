@@ -56,14 +56,14 @@ approach:
   title: Our approach to Cloud Migration
   intro: "We’ve developed a comprehensive approach to AWS cloud migration that ensures every step of the process is strategic and impactful.</br> Our methodology is built on three core phases:"
   steps:
-  - name: Assess
+  - name: 1. Assess
     description: Before starting your cloud migration, we assess your on-premises applications, data, and infrastructure to identify what should be moved first. We also uncover interdependencies between systems to help you prioritize effectively.
     icon: /assets/images/servicePageTemplate/process/magnifying-glass.svg
 
-  - name: Migrate
+  - name: 2. Migrate
     description: We guide your cloud migration from start to finish—whether providing hands-on support or managing the process entirely. From planning and data transfer to testing and optimization, we ensure each phase runs smoothly, securely, and with minimal disruption.
     icon: /assets/images/servicePageTemplate/process/cloud.svg
 
-  - name: Optimize
+  - name: 3. Optimize
     description: We help you get the most out of your cloud investment by identifying optimization opportunities, improving performance, and ensuring governance and compliance. Whether through expert consulting or hands-on implementation, we tailor the approach to your needs.
     icon: /assets/images/servicePageTemplate/process/optimisation.svg
