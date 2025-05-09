@@ -17,7 +17,7 @@
       <h3>{{subTitle | safe}}</h3>
       <h3>{{intro}}</h3>
     </div>
-    <div class="grid challenges-grid">
+    <div class="grid services-grid">
       {% for challenge in challenges %}
       <div class="challenge card">
         <img src="{{challenge.icon}}" class="icon icon-lg" />
@@ -33,7 +33,7 @@
     <div class="title-section center">
       <h3>{{approach.title}}</h3>
     </div>
-    <div class="grid process-container">
+    <div class="grid services-grid">
       {% for step in approach.steps%}
       <div class="grid-item card">
         <img src="{{step.icon}}" class="icon icon-lg" />
@@ -60,7 +60,10 @@
           <p>{{benefit.description}}</p>
         </div>
         <div>
-          <img src="{{benefit.image}}" class="illustration" />
+          {% if benefit.name == 'Vendor-Agnostic, Future-Proof Solutions' %} {%
+          set className = 'illustration round' %} {% else %} {% set className =
+          'illustration' %} {% endif %}
+          <img src="{{ benefit.image }}" class="{{ className }}" />
         </div>
       </div>
       {% endfor %}
